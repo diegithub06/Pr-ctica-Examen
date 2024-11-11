@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <h1>Formulario de Información</h1>
+    <form action="formulario.php" method=POST>
+    <fieldset>
+        <legend>Sus Datos</legend>
+        <p>
+        <label for="nombre y apellidos">Nombre y Apellidos:</label>
+        <input id="nombre y apellidos" type="text" maxlength="50"
+        name="nombre y apellidos"><br>
+        </p>
+        <p>
+        <label for="contraseña">Contraseña:</label>
+        <input type="contraseña" maxlength="8" type="password" id="contraseña"
+        name="contraseña">
+        </p>
+        <p>
+            <label for="usuario">Usuario:</label>
+            <input type="usuario" type="text" placeholder=n id="usuario" name="usuario" value="anonimo" disabled>
+        </p>
+        <p>
+            <label for="nivel">Nivel:</label>
+            <br>
+            <label for="nivel">Profesional </label>
+            <input type="radio" value="Pro" id="nivel" name="nivel">
+            <br>
+            <br>
+            <label for="nivel">Avanzado </label>
+            <input type="radio" value="Avan" checked id="nivel" name="nivel">
+            <br>
+            <br>
+            <label for="nivel">Principiante </label>
+            <input type="radio" value="Prin" id="nivel" name="nivel">
+        </p>
+    </fieldset>
+    <p>
+        <label for="Nacionalidad">Nacionalidad: </label>
+        <select name="Nacionalidad" id="Nac">
+            <option value="1">España</option>
+            <option value="1">Otra</option>
+        </select>
+    </p>
+    <p>
+    <label for="Descripcion">Descripcion</label>
+    <textarea name="Desc" cols="10" rows="6"></textarea>
+    </p>
+    <p>
+        <input type="checkbox" value="Deseo" id="Deseo" name="Deseo" checked>
+        <label for="Deseo">Deseo recibir información sobre ofertas y novedades</label>
+    </p>
+    <p>
+        <input type="checkbox" value="Declarar" id="Declarar" name="Declarar" checked>
+        <label for="Declarar">Declaro haber leído y aceptar las condiciones generales del programa y la
+            normativa sobre protección de datos.
+        </label>
+    </p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Resetear">
+    </form>
+</body>
+</html>
